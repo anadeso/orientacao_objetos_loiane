@@ -22,6 +22,6 @@
       - int  numPassageiros
    
    - Métodos<br>
-     Uma ação, logo os nomes de métodos dever ser verbo.
+     Uma ação, logo nos nomes usamos verbo.
       - exibirAutonomia();
       - obterAutonomia();

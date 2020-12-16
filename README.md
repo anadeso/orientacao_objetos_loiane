@@ -3,10 +3,9 @@
    - Atributos
    - Métodos 
      - Métodos simples
-     <br>
-     <br>
+   
       public void exibirAutonomia(){ <br>
-             System.out.println("Autonomia é " +(carro.capCombustivel * carro.consumoCombustivel)); <br>
+          + System.out.println("Autonomia é " +(carro.capCombustivel * carro.consumoCombustivel)); <br>
       }<br>
        
       Métodos com retorno

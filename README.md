@@ -2,11 +2,11 @@
    - Classes
    - Atributos
    - Métodos 
-     - Métodos simples
+      - Métodos simples
    
-      public void exibirAutonomia(){ <br>
-           System.out.println("Autonomia é " +(carro.capCombustivel * carro.consumoCombustivel)); <br>
-      }<br>
+         public void exibirAutonomia(){ <br>
+              System.out.println("Autonomia é " +(carro.capCombustivel * carro.consumoCombustivel)); <br>
+         }<br>
        
       - Métodos com retorno<br>
          public double obterAutonomia(){ <br>
@@ -19,7 +19,7 @@
 ### Boas Práticas 
 
 + Variáveis
-   ++int  numPassageiros
+   +int  numPassageiros
    
 ## Métodos
    Uma ação, logo os nomes de métodos dever ser verbo.

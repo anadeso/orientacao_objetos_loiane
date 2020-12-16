@@ -1,7 +1,7 @@
-# POO - aula 24 a 27
-   Classes
-   Atributos
-   Métodos 
+### POO - aula 24 a 27
+   - Classes
+   - Atributos
+   - Métodos 
       Métodos simples
          public void exibirAutonomia(){
               System.out.println("Autonomia é " +(carro.capCombustivel * carro.consumoCombustivel));
@@ -12,9 +12,10 @@
          }
       Métodos com parâmetros 
 
+   `$ npm install marked`
 
 
-# Boas prática 
+### Boas prática 
 
 ## Variáveis
    int  numPassageiros

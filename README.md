@@ -5,22 +5,21 @@
      - Métodos simples
    
       public void exibirAutonomia(){ <br>
-          + System.out.println("Autonomia é " +(carro.capCombustivel * carro.consumoCombustivel)); <br>
+           System.out.println("Autonomia é " +(carro.capCombustivel * carro.consumoCombustivel)); <br>
       }<br>
        
-      Métodos com retorno
-         public double obterAutonomia(){
-              return carro.capCombustivel * carro.consumoCombustivel;
-         }
-      Métodos com parâmetros 
+      - Métodos com retorno
+         public double obterAutonomia(){ <br>
+              return carro.capCombustivel * carro.consumoCombustivel;<br>
+         }<br>
+         
+      - Métodos com parâmetros 
 
-   `$ npm install marked`
 
+### Boas Práticas 
 
-###Boas Práticas 
-
-## Variáveis
-   int  numPassageiros
++ Variáveis
+   ++int  numPassageiros
    
 ## Métodos
    Uma ação, logo os nomes de métodos dever ser verbo.

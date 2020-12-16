@@ -18,10 +18,10 @@
 
 ### Boas Práticas 
 
-+ Variáveis
-   +int  numPassageiros
+   - Variáveis
+      - int  numPassageiros
    
 ## Métodos
-   Uma ação, logo os nomes de métodos dever ser verbo.
-   exibirAutonomia();
-   obterAutonomia();
+   - Uma ação, logo os nomes de métodos dever ser verbo.
+      - exibirAutonomia();
+      - obterAutonomia();

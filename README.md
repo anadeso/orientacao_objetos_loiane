@@ -8,7 +8,7 @@
            System.out.println("Autonomia é " +(carro.capCombustivel * carro.consumoCombustivel)); <br>
       }<br>
        
-      - Métodos com retorno
+      - Métodos com retorno<br>
          public double obterAutonomia(){ <br>
               return carro.capCombustivel * carro.consumoCombustivel;<br>
          }<br>

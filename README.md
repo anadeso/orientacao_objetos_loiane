@@ -4,7 +4,7 @@
    - Métodos 
      - Métodos simples
      <br>
-      `$ public void exibirAutonomia(){`
+      `public void exibirAutonomia(){`
       `        System.out.println("Autonomia é " +(carro.capCombustivel * carro.consumoCombustivel));`
       `   }`
        

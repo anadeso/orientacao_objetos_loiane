@@ -12,6 +12,8 @@ public class Carro {
     double capCombustivel;
     double consumoCombustivel;
 
+    // Sobrecarga de CONSTRUTORES
+    // Quandoo temos o MESMO nome e/ou tambem o mesmo retorno, porém com parâmetros DIFERENTES.
     public Carro(String marca, String modelo, int numPassageiros, double capCombustivel, double consumoCombustivel) {
         this.marca = marca;
         this.modelo = modelo;

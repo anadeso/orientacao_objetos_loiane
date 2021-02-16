@@ -23,7 +23,6 @@ public class Calculadora {
     public static double elevarPotencia(double num1, double num2){
         //return Math.pow(num1, num2);
 
-        //x*n
         double valor = num1;
 
         for(double i=1; i<=num2; i++){

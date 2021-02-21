@@ -1,12 +1,9 @@
 package aula_36_labs;
 
-import aula_24_labs.Contatos;
-import aula_36.Telefone;
-
 public class Agenda {
 
     private String nome;
-    private Contato[] contato;
+    private Contato[] contatos;
 
     public Agenda(String nome) {
         this.nome = nome;
@@ -20,11 +17,23 @@ public class Agenda {
         this.nome = nome;
     }
 
-    public Contato[] getContato() {
-        return contato;
+    public Contato[] getContatos() {
+        return contatos;
     }
 
-    public void setContato(Contato[] contato) {
-        this.contato = contato;
+    public void setContatos(Contato[] contatos) {
+        this.contatos = contatos;
+    }
+
+    public String obterInfo(){
+        String info = "Nome = " +nome;
+
+        if (contatos != null){
+            for(Contato c : contatos){
+                info += c.obterInfor() + "\n";
+            }
+        }
+
+        return info;
     }
 }

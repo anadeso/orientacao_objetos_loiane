@@ -13,27 +13,31 @@ public class TesteAC {
 
         Agenda agenda = new Agenda(nome);
 
-        Contato[] contato = new Contato[3];
+        // Criar um array de contatos
+        Contato[] contatos = new Contato[3];
 
-        for(int i=1; i<=3; i++){
+        for(int i=0; i<3; i++){
+
+            System.out.println("Entre com as informacoes do contato");
+            Contato c = new Contato();
 
             System.out.println("Informe nome do contato");
-            contato.setNome(scanner.next());
+            c.setNome(scanner.nextLine());
 
             System.out.println("Informe telefone do contato");
-            contato.setTelefone(scanner.next());
+            c.setTelefone(scanner.nextLine());
 
             System.out.println("Informe e-mail do contato");
-            contato.setEmail(scanner.next());
+            c.setEmail(scanner.nextLine());
+
+            // Adicionando objeto c em nosso array
+            contatos[i] = c;
         }
 
-        agenda.setContato(contato);
-        System.out.println();
+        agenda.setContatos(contatos);
 
-        System.out.println("Nome da agenda : " + agenda.getNome());
-
-        for(Contato c : agenda.getContato() ){
-           System.out.println(c.getNome() + c.getTelefone() + c.getEmail());
+        if (agenda != null){
+            System.out.println(agenda.obterInfo());
         }
 
     }

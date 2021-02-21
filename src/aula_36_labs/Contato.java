@@ -30,4 +30,9 @@ public class Contato {
         this.email = email;
     }
 
+    public String obterInfor(){
+        return "Nome = " +nome + "; " +
+                "Telefone = " +telefone + "; "+
+                "E-mail = " +email;
+    }
 }

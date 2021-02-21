@@ -5,7 +5,6 @@ public class Contato {
     private String nome;
     private String telefone;
     private String email;
-    private Agenda[] agenda;
 
     public String getNome() {
         return nome;
@@ -31,11 +30,4 @@ public class Contato {
         this.email = email;
     }
 
-    public Agenda[] getAgenda() {
-        return agenda;
-    }
-
-    public void setAgenda(Agenda[] agenda) {
-        this.agenda = agenda;
-    }
 }

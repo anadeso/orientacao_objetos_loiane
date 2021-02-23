@@ -30,5 +30,34 @@ public class Aluno {
         this.notas = notas;
     }
 
+    public String obterInfo(){
+
+        String info = "Nome Aluno = " +nome + "; ";
+            info += "Matricula = " +matricula + "; ";
+            info += "Notas: ";
+
+            double soma = 0;
+            for(double n : notas){
+                soma += n;
+                info += n + " ";
+            }
+            double media = soma/4;
+            info += "\n" + "Media = " + media + " - ";
+            if (media >=7){
+                info += "Aprovado!";
+            } else {
+                info += "Reprovado!";
+            }
+
+            return info;
+    }
+
+    public double obterMedia(){
+        double soma = 0;
+        for(double n : notas){
+            soma += n;
+        }
+        return soma/4;
+    }
 
 }

@@ -39,6 +39,7 @@ public class TesteCurso {
         for(int i=0; i<5; i++){
 
             Aluno a = new Aluno();
+            scan.nextLine();
 
             System.out.println("Entre com o nome do aluno ");
             String nomeAluno= scan.nextLine();
@@ -49,17 +50,20 @@ public class TesteCurso {
             double[] notas = new double[4];
 
             for(int j=0; j<4; j++){
-                System.out.println("Entre com a nota ");
+                System.out.println("Entre com a nota " +(j+1));
                 notas[j] = scan.nextDouble();
             }
 
+            alunos[i] = a;
             a.setNome(nomeAluno);
             a.setMatricula(matricAluno);
             a.setNotas(notas);
+
         }
 
         curso.setAlunos(alunos);
 
+        System.out.println(curso.obterInfo());
 
 
     }

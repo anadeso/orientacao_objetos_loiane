@@ -38,4 +38,35 @@ public class Curso {
     public void setProfessor(Professor professor) {
         this.professor = professor;
     }
+
+    public String obterInfo(){
+        String info = "Nome do curso = " +nome + "\n";
+
+        // verifica se é nulo pois é um objeto
+        if (professor != null){
+            info += professor.getInfo();
+        }
+
+        if (alunos != null){
+            System.out.println("----- Alunos ------");
+            for (Aluno a : alunos){
+                if (a != null){
+                    info += a.obterInfo();
+                    info += "\n";
+                }
+            }
+            info += "\n Media da turma = " +obterMediaTurma();
+        }
+        return info;
+    }
+
+    public double obterMediaTurma(){
+        double soma = 0;
+        for (Aluno a : alunos){
+            if (a != null){
+                soma += a.obterMedia();
+            }
+        }
+        return soma/alunos.length;
+    }
 }

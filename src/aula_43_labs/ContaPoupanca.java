@@ -16,9 +16,10 @@ public class ContaPoupanca extends ContaBancaria{
 
     @Override
     public String toString() {
-        return "ContaPoupanca{" +
-                "diaRendimento=" + diaRendimento +
-                '}';
+        return "ContaPoupanca{ " +
+                "diaRendimento = " + diaRendimento +
+                '}' + " - "+
+                super.toString();
     }
 
     public boolean calcularNovoSaldo(double taxaRendimento){

@@ -1,4 +1,4 @@
-package aula_48;
+package aula_49;
 
 public class FinallyPegadinha {
 
